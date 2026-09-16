@@ -1,0 +1,71 @@
+{
+  "name": "@nexdeve/nexsecurity",
+  "version": "0.1.0",
+  "description": "Comprehensive security toolkit for Node.js/Express — XSS, CSRF, SQLi protection, secure headers, password hashing, JWT validation and AES-256-GCM encryption",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "security",
+    "xss",
+    "csrf",
+    "sql-injection",
+    "express",
+    "middleware",
+    "helmet",
+    "jwt",
+    "encryption"
+  ],
+  "author": "NexDeve <hello@nexdeve.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/nexdeve/nexsecurity#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexdeve/nexsecurity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexdeve/nexsecurity/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "sanitize-html": "^2.13.1"
+  },
+  "peerDependencies": {
+    "express": ">=4.18.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^20.14.15",
+    "@types/sanitize-html": "^2.13.0",
+    "express": "^4.19.2",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
